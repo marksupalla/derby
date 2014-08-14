@@ -1,0 +1,30 @@
+{
+  "_id":{"$oid":"000000000000000000000001"},
+  "name":"Bob",
+  "spouse":{"name":"Sara", "photo":"http://www.antoniakinlay.com/images/stuff%20001.jpg"},
+  "photo":"http://www.adonisphotos.com/Headshots/Head-shots-Seattle-13.jpg",
+  "cash":1000,
+  "assets":[{"name": "ring", "photo":"http://cosmeticsideas.com/wp-content/uploads/2014/06/Engagement-Ring-9.jpg", "value":1000}, {"name": "car", "photo":"http://www.ford.ca/resources/ford/fiesta/2015/highlights/fie15_highlight_lg_safetycage.jpg", "value":5000}],
+  "results":{"wins": 8, "losses": 5}
+}
+
+{
+  "_id":{"$oid":"000000000000000000000002"},
+  "name":"Kevin",
+  "spouse":{"name":"Kim", "photo":"http://davidneuse.com/cms/wp-content/gallery/headshots-acting-pageant-entertainers-etc-new/headshots-001.jpg"},
+  "photo":"http://www.julieschoening.com/wp-content/uploads/2012/02/041912-thoughtbot-headshots-401.jpg",
+  "cash":6000,
+  "assets":[{"name": "house", "photo":"http://3.bp.blogspot.com/-yH_JiiSFchI/UBm6HnFF6cI/AAAAAAAAh4E/LXhtqX39h0E/s1600/DIY+Blogger+House+Daybreak.jpg", "value":300000}, {"name": "boat", "photo":"http://www.activeautoinsurance.com/wp-content/uploads/2014/07/boat-3.jpg", "value":50000}],
+  "results":{"wins": 10, "losses": 1}
+}
+
+{
+  "_id":{"$oid":"000000000000000000000003"},
+  "name":"Tom",
+  "spouse":{"name":"Pam", "photo":"http://jordan.fan-sites.org/JordanHeadShotBlackAndWhite.jpg"},
+  "photo":"http://www.apnphotographyschool.com/wp-content/uploads/2011/06/head-shots-16.jpg",
+  "cash":1000000,
+  "assets":[{"name": "land", "photo":"http://www.climatetechwiki.org/sites/climatetechwiki.org/files/images/teaser/grazing-land-overlooking-the-oyce-and-costa-hill-236621.jpg", "value":300000}, {"name": "plane", "photo":"http://pnsecurity.co.uk/wp-content/uploads/2011/08/Ch604.3622153161.jpg", "value":5000000}],
+  "results":{"wins": 5, "losses": 5}
+}
+
