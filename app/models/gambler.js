@@ -8,7 +8,7 @@ function Gambler(o){
   this.photo       = o.photo;
   this.spouse      = o.spouse;
   this.cash        = o.cash;
-  this.assets      = o.assets;
+  this.assets      = [];
   this.results     = o.results;
 }
 
@@ -20,14 +20,6 @@ Gambler.prototype.save = function(cb){
   Gambler.collection.save(this, cb);
 };
 
-Gambler.prototype.addAsset = function(o){
-  this.assets.push({name:o.name, photo:o.photo, value:parseFloat(o.value)});
-};
-
-Gambler.prototype.removeAsset = function(o, cb){
-  var asset = _.remove(this.assets, function(asset){return asset.name === o.name;});
-  this.cash += asset[0].value * 1;
-};
 
 Gambler.all = function(cb){
   Gambler.collection.find().toArray(cb);
@@ -41,6 +33,16 @@ Gambler.findById = function(id, cb){
   });
 };
 
+Gambler.prototype.removeAsset = function(o, cb){
+  var asset = _.remove(this.assets, function(asset){
+    return asset.name === name;
+  });
+  this.cash += asset[0].value * 1;
+};
+
+Gambler.prototype.addAsset = function(o){
+  this.assets.push({name:o.name, photo:o.photo, value:parseFloat(o.value)});
+};
 
 Gambler.deleteById = function(id, cb){
   var _id = Mongo.ObjectID(id);
