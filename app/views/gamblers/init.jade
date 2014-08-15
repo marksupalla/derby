@@ -1,0 +1,17 @@
+extends ../shared/template
+block content
+  h2.new New Gambler
+    form(method='post', action='/gamblers')
+      #newGambler
+        label New Gambler
+          input(name='name', type='text', placeholder='Bob Smith', autofocus=true)
+          input(name='photo', type='text', placeholder='photo url')
+          input(name='cash', type='number', placeholder='cash amount')
+          input(name='results.wins', type='text', placeholder='wins')
+          input(name='results.losses', type='text', placeholder='losses')
+      #newSpouse
+        label Spouse
+          input(name='spouse.name', type='text', placeholder='Sarah Smith')
+          input(name='spouse.photo', type='text', placeholder='photo url')
+      #add 
+        button Add Gambler

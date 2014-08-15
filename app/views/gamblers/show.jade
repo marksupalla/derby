@@ -1,0 +1,10 @@
+extends ../shared/template
+block content
+  h2= gambler.name
+
+  #newGambler
+    #photo(style='background-image: url(#{gambler.photo});')
+    #cash $#{gambler.cash}
+    #spouse
+      .name= #{gambler.spouse.name}
+      .photo(style='background-image: url(#{gambler.spouse.photo});')
